@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body{
+				font: 12px/1.5 arial,'Hiragino Sans GB','\5FAE\8F6F\96C5\9ED1',sans-serif;
+			}
+			a{
+				text-decoration: none;
+			}
+			
+			h1 {
+			    display: block;
+			    font-size: 2em;
+			    margin-block-start: 0.67em;
+			    margin-block-end: 0.67em;
+			    margin-inline-start: 0px;
+			    margin-inline-end: 0px;
+			    font-weight: bold;
+			}
+			
+			.line{
+				overflow: hidden;
+				width: 1px;
+				height: 12px;
+				display: inline-block;
+				background: #999;
+				margin: 2px 4px -2px 4px;
+				padding: 0;
+				text-decoration: line-through;
+				float: left;
+				
+
+			}
+			.top{
+				margin:0 auto;
+				background-color: #f2f2f2;
+				width: 100%;
+				height: 28px;
+			}
+			.top>ul{
+				margin-bottom: 0px;
+			}
+			.top-right{
+				width: 500px;
+				margin-top: 0px;
+				position: relative;
+				float: right;
+			}
+			.top-left{
+				width: 250px;
+				margin-top: 0px;
+				position: relative;
+				float: left;
+			}
+			.top-left li{
+				margin-right: 20px;
+				font-size: 10px;
+				display: inline;
+			}
+			.top-right li{
+				margin-right: 5px;
+				font-size: 10px;
+				display: inline;
+				float: left;
+			}
+			
+			.middle{
+				width: 100%;
+				height: 110px;
+			}
+			.alogo{
+				width: 165px;
+				margin-left: 0px;
+				height: 85px;
+				display: block;
+				background:url(http://p0.jmstatic.com/templates/jumei/images/logo_new_v1.jpg) no-repeat top left;
+				text-indent:-999em;
+			}
+			.searchbox{
+				margin-top: 40px;
+				width: 536px;
+				height: 40px;
+				float: left;
+				position: relative;
+				margin-left: 124px;
+				border: 5px solid #ed145b;
+			}
+			.middle>h1{
+				float: left;
+			}
+			.inputc{
+				margin:0;
+				border: none;
+				width: 436px;
+				height: 38px;
+				outline: none;
+				font-size: 20px;
+				float: left;
+			}
+			.inputbottom{
+				margin: 0;
+				width: 96px;
+				height: 41px;
+				border: none;
+				padding: 0;
+				background-color: #ed145b;
+				color: white;
+			}
+			.searchbox>ul li{
+				display: inline;
+			}
+			.submenu{
+				display: none;
+			}
+			.top-right li{
+				display:inline-block;
+			    /*垂直对齐方式*/
+			    vertical-align:top;
+			    color:black;
+				text-align:center;
+				width:90px;
+				
+			}
+			.top-right li:nth-child(3):hover .submenu{
+				display: block;
+				position: relative;
+				left: -40px;
+				z-index: 999;
+			}
+			.top-right li:nth-child(5):hover .submenu{
+				display: block;
+				position: relative;
+				left: -40px;
+				z-index: 999;
+			}
+			.icon_mobil{
+				width: 10px;
+				height: 14px;
+				background: url(http://a2.jmstatic.com/6af6d8c6b9b5ec16/header_sprites1.png) no-repeat;
+				background-position: 0 -21px;
+				float: left;
+			}
+			.searchbox>ul li a{
+				float: left;
+			}
+			.cartbox{
+				width: 140px;
+				height: 34px;
+				float: left;
+				margin: 40px 0 0 60px
+			}
+		</style>
+	</head>
+	<body>
+		<!--top-->
+		<div class="top">
+			<ul class="top-left">
+				<li><a href>欢迎来到聚美！</a></li>
+				<li><a href>请登录</a></li>
+				<li><a href>快速注册</a></li>
+			</ul>
+			<ul class="top-right">
+				<li><a href>订单查询</a></li>
+				<li><a href>收藏的品牌</a></li>
+				<li>
+					<a href>我的聚美</a>
+					<ul class="submenu">
+						<li><a href="">我的订单</a></li>
+						<li><a href="">我的现金券</a></li>
+						<li><a href="">我的红包</a></li>
+						<li><a href="">我的余额</a></li>
+						<li><a href="">我的提现退款</a></li>
+						<li><a href="">我的收藏</a></li>
+						<li><a href="">我的心愿单</a></li>
+						<li><a href="">会员中心</a></li>
+						<li><a href="">礼品卡兑换</a></li>
+					</ul>
+				</li>
+				<li>
+					
+					<span class="line"></span>
+					<s class="icon_mobil"></s>
+					<a href style="color: red;float: left;">手机聚美</a>
+					<span class="line"></span>
+				</li>
+				<li>
+					<a href>更多</a>
+					<ul class="submenu">
+						<li><a href="">邀请好友</a></li>
+						<li><a href="">加入收藏</a></li>
+						<li><a href="">新浪微博</a></li>
+						<li><a href="">聚美微信</a></li>
+						<li><a href="">百度贴吧</a></li>
+						<li><a href="">腾讯微博</a></li>
+						<li><a href="">人人公众主页</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!--middle-->
+		<div class="middle">
+			<!--leftlogo-->
+			<h1><a class="alogo" href="">adadadadas</a></h1>
+			<!--serchbox-->
+			<div class="searchbox">
+				<input class="inputc" type="text"/>
+				<button src="" class="inputbottom" type="submit">搜索</button>
+				<ul>
+					<li><a href="">保湿</a><s class="line"></s></li>
+					<li><a href="">面膜</a><s class="line"></s></li>
+					<li><a href="">洗面奶</a><s class="line"></s></li>
+					<li><a href="">补水</a><s class="line"></s></li>
+					<li><a href="">香水</a><s class="line"></s></li>
+					<li><a href="">眼霜</a><s class="line"></s></li>
+					<li><a href="">口红</a><s class="line">></s></li>
+					<li><a href="">护肤套装</a><s class="line"></s></li>
+					<li><a href="">BB霜</a></li>
+				</ul>
+			</div>
+			<!--rightbox-->
+			<div class="cartbox">
+				<img src="http://p0.jmstatic.com/assets/cart.gif" />
+			</div>
+		</div>
+		<!--bottom-->
+		<div class="bottom">
+			
+		</div>
+	</body>
+</html>

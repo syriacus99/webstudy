@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.title-left{
+				/*position:fixed;*/
+				float: left;
+				margin-left: 300px;
+			}
+			.title-right{
+				float: right;
+				margin-right: 150px;
+			}
+			.biglogo{
+				margin-left: 80px;
+				position:fixed;
+				z-index: 0;
+			}
+			.login{
+				float:left;
+				position:fixed;
+				width: 350px;
+				height: 300px;
+				border: 1px solid black;
+				margin-left: 850px;
+				z-index: 2;
+			}
+			span[name="loginword"]{
+				margin-left: 30px;
+				color: red;
+				font-size: 20px;
+			}
+			
+			.username{
+				width: 230px;
+				height: 30px;
+				background-image: url(https://f4.jmstatic.com/static_passport/dist/v1.0.137928/images/account/login_sign/sign.png?2);
+				background-repeat: no-repeat;
+			}
+			input::-webkit-input-placeholder{text-align: center;}
+			
+			.dymicpassword{
+				width: 130px;
+				height: 30px;
+				background-image: url(https://f0.jmstatic.com/static_passport/dist/v1.0.137928/images/account/login_sign/sign.png?2);
+				background-repeat: no-repeat;
+				background-position: 0px -50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div style="height: 100px;">
+			<div class="title-left"><img src="img/logo_new_v1.jpg" /></div>
+			<div class="title-right"><img src="img/title.png" /> </div>
+		</div>
+		<div style="width: 400px;height: 360px;">
+			<div class="biglogo"><img src="img/loginPic.jpg" /></div>
+			<div class="login"> 
+				<form>
+					<span name="loginword">登录聚美</span><span style="float: right;margin-right: 20px;color: darkgray;">还没有聚美账号?<a href="#">立即注册</a></span><br />
+					<span><input name="select" type="radio"/><label>手机动态密码登录</label></span>
+					<span><input name="select" type="radio"/><label>普通密码登录</label></span><br />
+					<div style="text-align: center;"><input class="username" type="text" placeholder="已注册的用户名"/></div>
+					<div style="text-align: center;">
+						<input class="dymicpassword" type="text" placeholder="动态密码"/>
+						<span><input type="button" style="width: 95px;height: 40px;" value="获取动态密码"></span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
